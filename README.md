@@ -11,7 +11,7 @@ This repository contains coursework, assignments, and supporting materials for t
   Contains exercises and code for implementing ML algorithms in financial predictive modeling.
 
 - **key/**  
-  Stores essential configuration files or key scripts.
+  Stores answer key from instructors.
 
 - **supporting/**  
   Contains supporting materials and reference documentation for this module.
@@ -23,7 +23,7 @@ This repository contains coursework, assignments, and supporting materials for t
   Explores data cleaning, preprocessing, and management techniques critical for financial datasets.
 
 - **key/**  
-  Key scripts or files related to this module.
+  Stores answer key from instructors.
 
 - **supporting/**  
   Additional resources and documentation for data preprocessing tasks.
@@ -35,7 +35,7 @@ This repository contains coursework, assignments, and supporting materials for t
   Focuses on using AI/ML models for detecting and preventing fraud in financial systems.
 
 - **key/**  
-  Configuration or scripts relevant to fraud detection tasks.
+  Stores answer key from instructors.
 
 - **supporting/**  
   Supplementary materials, examples, or datasets related to fraud detection.
@@ -47,7 +47,7 @@ This repository contains coursework, assignments, and supporting materials for t
   Demonstrates methods for customer segmentation using clustering and other techniques.
 
 - **key/**  
-  Key resources or configurations for customer segmentation.
+  Stores answer key from instructors.
 
 - **supporting/**  
   Supporting documentation and additional resources.
@@ -62,7 +62,7 @@ This repository contains coursework, assignments, and supporting materials for t
   Flask-based implementation of chatbot deployment.
 
 - **key/**  
-  Essential files for NLP and chatbot modules.
+  Stores answer key from instructors.
 
 - **supporting/**  
   References and materials supporting chatbot and NLP implementations.
