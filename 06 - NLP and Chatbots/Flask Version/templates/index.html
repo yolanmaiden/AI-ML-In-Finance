@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message-container {
+            margin-top: 20px;
+        }
+        .message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .user-message {
+            background-color: #e6f2ff;
+        }
+        .assistant-message {
+            background-color: #d9edf7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Concert Bot</h1>
+        <form method="post">
+            <input type="text" name="user_input" placeholder="Enter your message here...">
+            <button type="submit">Send</button>
+        </form>
+        <div class="message-container">
+            {% for message in context %}
+                {% if message['role'] == 'user' %}
+                    <div class="message user-message">
+                        <strong>User:</strong> {{ message['content'] }}
+                    </div>
+                {% elif message['role'] == 'assistant' %}
+                    <div class="message assistant-message">
+                        <strong>Assistant:</strong> {{ message['content'] }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

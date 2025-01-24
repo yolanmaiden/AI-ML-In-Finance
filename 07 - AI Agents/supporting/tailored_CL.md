@@ -1,0 +1,1 @@
+A tailored cover letter that effectively highlights Ali Esbak's qualifications and experiences relevant to the Senior Software Engineer position at Wells Fargo.
